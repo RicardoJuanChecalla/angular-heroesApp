@@ -1,27 +1,65 @@
 # HeroesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
+ng new pipesApp
 
-## Development server
+ng serve -o
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ng g m auth
 
-## Code scaffolding
+ng g m heroes
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ng g m material
 
-## Build
+ng g c auth/pages/login --skipTests -is
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ng g c auth/pages/register --skipTests -is
 
-## Running unit tests
+ng g c heroes/pages/aggregate --skipTests -is
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng g c heroes/pages/search --skipTests -is
 
-## Running end-to-end tests
+ng g c heroes/pages/heroe --skipTests -is
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ng g c heroes/pages/home --skipTests -is
 
-## Further help
+ng g c heroes/pages/list --skipTests -is
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ng g c shared/errorPage --skipTests -is
+
+ng g m appRouting --flat
+
+ng g m auth/authRouting --flat
+
+ng g s auth/services/auth --skipTests
+
+ng g g auth/guards/auth --skipTests
+
+ng g m heroes/heroesRouting --flat
+
+ng g s heroes/services/heroes --skipTests
+
+ng g c heroes/components/heroeTarjeta --skipTests -is
+
+ng g c heroes/components/confirmar --skipTests -is
+
+ng g p heroes/pipes/imagen --skipTests
+
+ng add @angular/material
+
+npm i @angular/flex-layout
+
+npm i -s @angular/flex-layout @angular/cdk
+
+https://material.angular.io
+
+https://fonts.google.com/icons?selected=Material+Icons
+
+https://gist.github.com/Klerith/403c91e61d3c87284beb0dd138619958
+
+https://quicktype.io/
+
+https://www.npmjs.com/package/json-server
+
+npm install -g json-server
+
+json-server --watch db.json
